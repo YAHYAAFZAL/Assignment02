@@ -1,0 +1,51 @@
+<!-- Yahya Afzal -->
+ <!-- 200597142 -->
+  <!-- Assignment02 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Smoothie Order</h1>
+    <form id="smoothieForm">
+        <label for="size">Size:</label>
+        <select id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br><br>
+
+        <label for="fruits">Select Fruits:</label><br>
+        <input type="checkbox" id="strawberry" name="fruits" value="strawberry">
+        <label for="strawberry">Strawberry</label><br>
+        <input type="checkbox" id="banana" name="fruits" value="banana">
+        <label for="banana">Banana</label><br>
+        <input type="checkbox" id="mango" name="fruits" value="mango">
+        <label for="mango">Mango</label><br><br>
+
+        <label for="extras">Add Extras:</label><br>
+        <input type="checkbox" id="protein" name="extras" value="protein">
+        <label for="protein">Protein</label><br>
+        <input type="checkbox" id="oats" name="extras" value="oats">
+        <label for="oats">Oats</label><br><br>
+
+        <label for="sweetener">Sweetener:</label>
+        <select id="sweetener">
+            <option value="honey">Honey</option>
+            <option value="agave">Agave</option>
+            <option value="stevia">Stevia</option>
+            <option value="none">None</option>
+        </select><br><br>
+
+        <button type="button" onclick="placeOrder()">Place Order</button>
+    </form>
+
+    <div id="smoothieDetails"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
